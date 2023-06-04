@@ -101,8 +101,8 @@ Si deseas contáctarte con nosotros clickame y escoje una de las formas en que q
             <h1>¡Bienvenido a nuestra comunidad!</h1>
             <p>Encuentra el lugar y el pacio agradable para conocer personas, amigos y más!</p>
             <br class="br">
-            <div id="popup" class="popup">
             <div class="caja">
+              <button class="close-btn" onclick="closeSection()">X</button>
               <div class="column-c">
                 <h3><span>Grupo Oficial:</span> Whatsapp</h3>
                 <ul>
@@ -131,7 +131,6 @@ Si deseas contáctarte con nosotros clickame y escoje una de las formas en que q
                   </p>
                 </ul>
               </div>
-              <button id="closeBtn" class="close-btn">X</button>
             </div>
           </div>
           </div>
@@ -490,13 +489,12 @@ Si deseas contáctarte con nosotros clickame y escoje una de las formas en que q
 });
   </script>
 
-  <script>
-    $(document).ready(function() {
-  $('#closeBtn').click(function() {
-    $('.popup').fadeOut();
-  });
-});
-  </script>
+<script>
+  function closeSection() {
+    var caja = document.querySelector('.caja');
+    caja.style.display = 'none';
+  }
+</script>
 
 </body>
 </html>
