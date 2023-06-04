@@ -755,7 +755,6 @@ footer {
 
   /* Estilos para mostrar el menú desplegable al hacer clic en el botón del menú hamburguesa */
   .menu.active {
-    display: block;
     position: absolute;
     left: -10px;
     top: 158px;
@@ -766,23 +765,27 @@ footer {
     padding-right: 15px;
   }
 
-  .menu.active li{
+  .menu.active li {
     margin-right: 10px;
   }
 
-  nav{
+  nav {
     display: flex;
     flex-direction: column;
   }
 
-  .mega-menu-content-c{
-    display: flex !important;
+  .mega-menu-content-c {
+    display: none;
     flex-direction: column;
     width: 345px;
     left: -5px;
   }
 
-  .mega-menu-content-c h1{
+  .mega-menu-content-c.active {
+    display: flex;
+  }
+
+  .mega-menu-content-c h1 {
     text-align: left;
     width: 450px;
     font-size: 21.7px;
@@ -790,63 +793,62 @@ footer {
     position: relative;
   }
 
-  .mega-menu-content-c p{
+  .mega-menu-content-c p {
     text-align: center;
     line-height: 2;
   }
 
-  .br{
+  .br {
     display: none;
   }
 
-  .mega-menu-content-c .column-c h3{
+  .mega-menu-content-c .column-c h3 {
     width: 260px;
   }
 
-  .column-c .p{
+  .column-c .p {
     line-height: 1;
     width: 290px;
     text-align: center;
   }
 
-  .caja{
+  .caja {
     display: flex;
     flex-direction: column;
     margin-left: 18px;
   }
 
-  .separacion{
+  .separacion {
     display: none;
   }
 
-  .mega-menu-content-e{
-    
+  .mega-menu-content-e {
+
   }
 
-  .mega-menu-content-t{
-    
+  .mega-menu-content-t {
+
   }
-  
+
   .container {
     max-width: 100%;
   }
 
-  .marquee{
+  .marquee {
     width: auto;
   }
 
-  .content{
+  .content {
     width: 355px;
     top: 958px;
   }
 
-  .contenido-all{
+  .contenido-all {
     display: flex;
     flex-direction: column;
   }
 
-  .sidebar{
+  .sidebar {
     width: auto;
   }
-
 }
