@@ -778,7 +778,8 @@ footer {
   .mega-menu-content-c{
     display: flex !important;
     flex-direction: column;
-    width: auto;
+    width: 345px;
+    left: 0;
   }
 
   .mega-menu-content-c h1{
@@ -787,13 +788,61 @@ footer {
     font-size: 21.7px;
   }
 
+  .mega-menu-content-c p{
+    text-align: center;
+    line-height: 2;
+  }
+
+  .br{
+    display: none;
+  }
+
+  .mega-menu-content-c .column-c h3{
+    width: 260px;
+  }
+
   .column-c .p{
     line-height: 1;
+    width: 290px;
+    text-align: center;
+  }
+
+  .popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .caja{
     display: flex;
     flex-direction: column;
+    margin-left: 18px;
+    background-color: black;
+    padding: 20px;
+    border-radius: 5px;
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .close-btn:hover {
+    color: red;
   }
 
   .separacion{
