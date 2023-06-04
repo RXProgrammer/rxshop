@@ -489,8 +489,12 @@ Si deseas contáctarte con nosotros clickame y escoje una de las formas en que q
 
 <script>
   document.querySelector('.grupos').addEventListener('click', function() {
-document.querySelector('.grupos').classList.toggle('active');
-});
+    if (document.querySelector('.grupos').classList.contains('active')) {
+      document.querySelector('.grupos').classList.remove('active');
+    } else {
+      document.querySelector('.grupos').classList.add('active');
+    }
+  });
 </script>
 
 </body>
