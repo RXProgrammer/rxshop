@@ -9,6 +9,10 @@
     text-transform: uppercase;
 }
 
+.titulos span{
+    color: #e6d200;
+}
+
 .contenedor{
     text-align: center;
     top: 150px;
@@ -23,9 +27,13 @@
 }
 
 .social-icons a {
-    color: #fff;
+    color: black;
     margin-left: 10px;
     text-decoration: none;
+}
+
+.social-icons:hover{
+    color: red;
 }
 
 footer{
@@ -35,4 +43,6 @@ footer{
     text-align: center;
     background: gray;
     padding: 20px;
+    color: #e6d200;
+    border-top: solid #e6d200;
 }
