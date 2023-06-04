@@ -194,7 +194,7 @@ nav {
 }
 
 .mega-menu-content-c {
-  display: block;
+  display: none;
   position: absolute;
   top: 115%;
   right: -660px;
