@@ -432,13 +432,15 @@ Si deseas contáctarte con nosotros clickame y escoje una de las formas en que q
 
   </script>
 
-  <script>
-    var menuItem = document.querySelector('.mega-menu-c');
-    var submenu = menuItem.querySelector('.mega-menu-content-c');
+<script>
+  function setupSubMenu(menuItemClass, submenuClass) {
+    var menuItem = document.querySelector(menuItemClass);
+    var submenu = menuItem.querySelector(submenuClass);
     var timer;
 
     menuItem.addEventListener('mouseenter', function () {
       clearTimeout(timer);
+      closeAllSubmenus();
       submenu.style.display = 'block';
     });
 
@@ -447,41 +449,24 @@ Si deseas contáctarte con nosotros clickame y escoje una de las formas en que q
         submenu.style.display = 'none';
       }, 2000); // Cambia el valor '2000' por la cantidad de milisegundos que deseas que el submenu se mantenga visible después de dejar el área del menú principal.
     });
-  </script>
+  }
 
-  <script>
-    var menuItem = document.querySelector('.mega-menu-t');
-    var submenu = menuItem.querySelector('.mega-menu-content-t');
-    var timer;
-
-    menuItem.addEventListener('mouseenter', function () {
-      clearTimeout(timer);
-      submenu.style.display = 'block';
+  function closeAllSubmenus() {
+    var submenus = document.querySelectorAll('.mega-menu-content');
+    submenus.forEach(function (submenu) {
+      submenu.style.display = 'none';
     });
+  }
 
-    menuItem.addEventListener('mouseleave', function () {
-      timer = setTimeout(function () {
-        submenu.style.display = 'none';
-      }, 2000); // Cambia el valor '2000' por la cantidad de milisegundos que deseas que el submenu se mantenga visible después de dejar el área del menú principal.
-    });
-  </script>
+  // Configuración para el primer submenú
+  setupSubMenu('.mega-menu-c', '.mega-menu-content-c');
 
-  <script>
-    var menuItem = document.querySelector('.mega-menu-e');
-    var submenu = menuItem.querySelector('.mega-menu-content-e');
-    var timer;
+  // Configuración para el segundo submenú
+  setupSubMenu('.mega-menu-t', '.mega-menu-content-t');
 
-    menuItem.addEventListener('mouseenter', function () {
-      clearTimeout(timer);
-      submenu.style.display = 'block';
-    });
-
-    menuItem.addEventListener('mouseleave', function () {
-      timer = setTimeout(function () {
-        submenu.style.display = 'none';
-      }, 2000); // Cambia el valor '2000' por la cantidad de milisegundos que deseas que el submenu se mantenga visible después de dejar el área del menú principal.
-    });
-  </script>
+  // Configuración para el tercer submenú
+  setupSubMenu('.mega-menu-e', '.mega-menu-content-e');
+</script>
   
   <script>
     document.querySelector('.hamburger-menu').addEventListener('click', function() {
