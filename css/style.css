@@ -776,7 +776,21 @@ footer {
   }
 
   .mega-menu-content-c{
+    display: flex !important;
+    width: auto;
+  }
 
+  .mega-menu-content-c h1, p{
+
+  }
+
+  .column-c .p{
+
+  }
+
+  .caja{
+    display: flex;
+    flex-direction: column;
   }
 
   .mega-menu-content-e{
