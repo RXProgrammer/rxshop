@@ -775,17 +775,28 @@ footer {
     flex-direction: column;
   }
 
+  .close-btn{
+    position: absolute;
+    top: 20px;
+    left: 350px;
+    background: transparent;
+    border-style: none;
+    font-size: 20px;
+  }
+
   .mega-menu-content-c{
     display: flex !important;
     flex-direction: column;
     width: 345px;
-    left: 0;
+    left: -5px;
   }
 
   .mega-menu-content-c h1{
     text-align: left;
     width: 450px;
     font-size: 21.7px;
+    right: 4px;
+    position: relative;
   }
 
   .mega-menu-content-c p{
