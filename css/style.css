@@ -748,5 +748,13 @@ footer {
   /* Estilos para mostrar el menú desplegable al hacer clic en el botón del menú hamburguesa */
   .menu.active {
     display: block;
+    position: absolute;
+    left: 447px;
+    top: 90px;
+    text-align: end;
+    line-height: 5;
+    background: #de0000;
+    width: 300px;
+    padding-right: 15px;
   }
 }
