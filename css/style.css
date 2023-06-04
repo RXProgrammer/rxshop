@@ -740,13 +740,13 @@ footer {
 }
 
 /* Estilos para el menú en versión móvil */
-.menu {
-  display: none;
-}
-
 @media screen and (min-width: 374px) and (max-width: 768px) {
   body {
     overflow-x: hidden;
+  }
+
+  .menu {
+    display: none;
   }
 
   .hamburger-menu {
@@ -755,7 +755,7 @@ footer {
 
   /* Estilos para mostrar el menú desplegable al hacer clic en el botón del menú hamburguesa */
   .menu.active {
-    display: none;
+    display: block;
     position: absolute;
     left: -10px;
     top: 158px;
@@ -848,4 +848,5 @@ footer {
   .sidebar{
     width: auto;
   }
+
 }
