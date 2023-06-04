@@ -741,6 +741,10 @@ footer {
 
 /* Estilos para el menú en versión móvil */
 @media screen and (min-width: 374px) and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
   .menu {
     display: none;
   }
@@ -766,8 +770,21 @@ footer {
     margin-right: 10px;
   }
 
-  body {
-    overflow-x: hidden;
+  nav{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mega-menu-content-c{
+
+  }
+
+  .mega-menu-content-e{
+    
+  }
+
+  .mega-menu-content-t{
+    
   }
   
   .container {
@@ -783,11 +800,6 @@ footer {
     top: 958px;
   }
 
-  nav{
-    display: flex;
-    flex-direction: column;
-  }
-
   .contenido-all{
     display: flex;
     flex-direction: column;
@@ -796,4 +808,5 @@ footer {
   .sidebar{
     width: auto;
   }
+
 }
