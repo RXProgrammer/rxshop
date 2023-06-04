@@ -770,6 +770,10 @@ footer {
     margin-right: 10px;
   }
 
+  .grupos.active {
+    display: none;
+  }
+
   nav{
     display: flex;
     flex-direction: column;

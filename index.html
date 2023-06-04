@@ -93,7 +93,7 @@ Si deseas contáctarte con nosotros clickame y escoje una de las formas en que q
       <ul class="menu">
         <li class="li"><a href="https://rxprogrammer.github.io/rxshop/">Inicio</a></li>
         <li class="mega-menu-c li">
-          <a href="#">Grupos <ion-icon name="chevron-down-outline" class="icon"></ion-icon></a>
+          <a href="#" class="grupos">Grupos <ion-icon name="chevron-down-outline" class="icon"></ion-icon></a>
           <div class="mega-menu-content-c">
             <div class="flecha-c">
               <ion-icon name="caret-up"></ion-icon>
@@ -486,6 +486,12 @@ Si deseas contáctarte con nosotros clickame y escoje una de las formas en que q
   document.querySelector('.menu').classList.toggle('active');
 });
   </script>
+
+<script>
+  document.querySelector('.grupos').addEventListener('click', function() {
+document.querySelector('.grupos').classList.toggle('active');
+});
+</script>
 
 </body>
 </html>
