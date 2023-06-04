@@ -774,8 +774,13 @@ footer {
     max-width: 100%;
   }
 
+  .marquee{
+    
+  }
+
   .content{
-    display: none;
+    width: 355px;
+    top: 958px;
   }
 
   nav{
