@@ -470,25 +470,24 @@ document.querySelector('.hamburger-menu').addEventListener('click', function() {
 </script>
 
 <script>
-  // Obtener referencias a los elementos relevantes
+// Obtener referencias a los elementos relevantes
 const grupoButton = document.getElementById('grupo-button');
 const megaMenuContentC = document.querySelector('.mega-menu-content-c');
 
 // Agregar evento de clic al botón
 grupoButton.addEventListener('click', function() {
+  // Verificar si el mega-menu-content-c ya está visible
+  const isVisible = megaMenuContentC.classList.contains('active');
+
   // Alternar la clase 'active' en el mega-menu-content-c
   megaMenuContentC.classList.toggle('active');
-});
 
-// Agregar evento de clic al mega-menu-content-c
-megaMenuContentC.addEventListener('click', function(event) {
-  // Verificar si el evento de clic ocurrió dentro del mega-menu-content-c
-  if (event.target === megaMenuContentC) {
-    // Quitar la clase 'active' del mega-menu-content-c
-    megaMenuContentC.classList.remove('active');
+  // Verificar si se ocultó el mega-menu-content-c
+  if (isVisible && !megaMenuContentC.classList.contains('active')) {
+    // Volver a enfocar el botón "Grupo" para cerrar el mega-menu-content-c
+    grupoButton.focus();
   }
 });
-
 </script>
 </body>
 </html>
