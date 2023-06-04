@@ -753,13 +753,17 @@ footer {
   .menu.active {
     display: block;
     position: absolute;
-    left: 80px;
+    left: -10px;
     top: 158px;
     text-align: end;
     line-height: 5;
     background: #de0000;
-    width: 300px;
+    width: 400px;
     padding-right: 15px;
+  }
+
+  .menu.active li{
+    margin-right: 10px;
   }
 
   body {
