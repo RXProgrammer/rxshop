@@ -91,11 +91,10 @@ Si deseas contáctarte con nosotros clickame y escoje una de las formas en que q
         <div class="line"></div>
       </div>
       <ul class="menu">
-        <li class="li"><a href="#">Inicio</a></li>
+        <li class="li"><a href="https://rxprogrammer.github.io/rxshop/">Inicio</a></li>
         <li class="mega-menu-c li">
           <a href="#">Grupos <ion-icon name="chevron-down-outline" class="icon"></ion-icon></a>
           <div class="mega-menu-content-c">
-            <button class="close-btn" onclick="closeSection()">X</button>
             <div class="flecha-c">
               <ion-icon name="caret-up"></ion-icon>
             </div>
@@ -132,7 +131,6 @@ Si deseas contáctarte con nosotros clickame y escoje una de las formas en que q
                 </ul>
               </div>
             </div>
-          </div>
           </div>
         </li>
         <li class="mega-menu-t li">
@@ -432,15 +430,13 @@ Si deseas contáctarte con nosotros clickame y escoje una de las formas en que q
 
   </script>
 
-<script>
-  function setupSubMenu(menuItemClass, submenuClass) {
-    var menuItem = document.querySelector(menuItemClass);
-    var submenu = menuItem.querySelector(submenuClass);
+  <script>
+    var menuItem = document.querySelector('.mega-menu-c');
+    var submenu = menuItem.querySelector('.mega-menu-content-c');
     var timer;
 
     menuItem.addEventListener('mouseenter', function () {
       clearTimeout(timer);
-      closeAllSubmenus();
       submenu.style.display = 'block';
     });
 
@@ -449,37 +445,47 @@ Si deseas contáctarte con nosotros clickame y escoje una de las formas en que q
         submenu.style.display = 'none';
       }, 2000); // Cambia el valor '2000' por la cantidad de milisegundos que deseas que el submenu se mantenga visible después de dejar el área del menú principal.
     });
-  }
+  </script>
 
-  function closeAllSubmenus() {
-    var submenus = document.querySelectorAll('.mega-menu-content');
-    submenus.forEach(function (submenu) {
-      submenu.style.display = 'none';
+  <script>
+    var menuItem = document.querySelector('.mega-menu-t');
+    var submenu = menuItem.querySelector('.mega-menu-content-t');
+    var timer;
+
+    menuItem.addEventListener('mouseenter', function () {
+      clearTimeout(timer);
+      submenu.style.display = 'block';
     });
-  }
 
-  // Configuración para el primer submenú
-  setupSubMenu('.mega-menu-c', '.mega-menu-content-c');
+    menuItem.addEventListener('mouseleave', function () {
+      timer = setTimeout(function () {
+        submenu.style.display = 'none';
+      }, 2000); // Cambia el valor '2000' por la cantidad de milisegundos que deseas que el submenu se mantenga visible después de dejar el área del menú principal.
+    });
+  </script>
 
-  // Configuración para el segundo submenú
-  setupSubMenu('.mega-menu-t', '.mega-menu-content-t');
+  <script>
+    var menuItem = document.querySelector('.mega-menu-e');
+    var submenu = menuItem.querySelector('.mega-menu-content-e');
+    var timer;
 
-  // Configuración para el tercer submenú
-  setupSubMenu('.mega-menu-e', '.mega-menu-content-e');
-</script>
+    menuItem.addEventListener('mouseenter', function () {
+      clearTimeout(timer);
+      submenu.style.display = 'block';
+    });
+
+    menuItem.addEventListener('mouseleave', function () {
+      timer = setTimeout(function () {
+        submenu.style.display = 'none';
+      }, 2000); // Cambia el valor '2000' por la cantidad de milisegundos que deseas que el submenu se mantenga visible después de dejar el área del menú principal.
+    });
+  </script>
   
   <script>
     document.querySelector('.hamburger-menu').addEventListener('click', function() {
   document.querySelector('.menu').classList.toggle('active');
 });
   </script>
-
-<script>
-  function closeSection() {
-    var megaMenu = document.querySelector('.mega-menu-content-c');
-    megaMenu.style.display = 'none';
-  }
-</script>
 
 </body>
 </html>
