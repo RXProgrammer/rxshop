@@ -765,4 +765,8 @@ footer {
   .container {
     max-width: 100%;
   }
+
+  .content{
+    width: 571px;
+  }
 }
