@@ -769,4 +769,8 @@ footer {
   .content{
     width: 571px;
   }
+
+  marquee{
+    width: 0px;
+  }
 }
