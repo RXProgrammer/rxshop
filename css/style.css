@@ -776,8 +776,6 @@ footer {
   }
 
   .mega-menu-content-c{
-    display: flex !important;
-    flex-direction: column;
     width: 345px;
     left: -5px;
   }
