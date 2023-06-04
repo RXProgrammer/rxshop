@@ -755,6 +755,7 @@ footer {
 
   /* Estilos para mostrar el menú desplegable al hacer clic en el botón del menú hamburguesa */
   .menu.active {
+    display: block;
     position: absolute;
     left: -10px;
     top: 158px;
