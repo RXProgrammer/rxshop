@@ -757,4 +757,12 @@ footer {
     width: 300px;
     padding-right: 15px;
   }
+
+  body {
+    overflow-x: hidden;
+  }
+  
+  .container {
+    max-width: 100%;
+  }
 }
