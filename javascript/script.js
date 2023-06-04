@@ -10,5 +10,5 @@ var isYou = /Mozilla\/5.0 \(Linux; Android 10; K\) AppleWebKit\/537.36 \(KHTML, 
 
 // Redirigir a la página adecuada si se cumple alguna de las condiciones
 if ((isMobile || isSmallTablet) && !isYou) {
-    window.location.href = "/mantenimiento.html";
+    window.location.href = "/rxshop/mantenimiento.html";
 }
