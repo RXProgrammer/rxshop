@@ -178,7 +178,7 @@ nav {
 }
 
 .menu a:hover {
-  color: red;
+  color: black;
 }
 
 /* MENU GRUPOS */
@@ -781,8 +781,8 @@ footer {
   }
 
   .mega-menu-content-c{
-    width: 345px;
-    left: -5px;
+    width: 360px;
+    left: -10px;
   }
 
   .mega-menu-content-c h1{

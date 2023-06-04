@@ -89,7 +89,7 @@ Si deseas contáctarte con nosotros clickame y escoje una de las formas en que q
             </div>
             <h1>¡Bienvenido a nuestra comunidad!</h1>
                         <p>Encuentra el lugar y el pacio agradable para conocer personas, amigos y más!</p>
-            <br>
+            <br class="br">
             <div class="caja">
             <div class="column-c">
               <h3><span>Grupo Oficial:</span> Whatsapp</h3>
@@ -474,17 +474,18 @@ const megaMenuContentC = document.querySelector('.mega-menu-content-c');
 // Agregar evento de clic al botón
 grupoButton.addEventListener('click', function() {
   // Verificar si el mega-menu-content-c ya está visible
-  const isVisible = megaMenuContentC.classList.contains('active');
+  const isVisible = megaMenuContentC.style.left === '0px';
 
-  // Alternar la clase 'active' en el mega-menu-content-c
-  megaMenuContentC.classList.toggle('active');
+  // Alternar la visibilidad del mega-menu-content-c
+  megaMenuContentC.style.left = isVisible ? '-10px' : '0px';
 
   // Verificar si se ocultó el mega-menu-content-c
-  if (isVisible && !megaMenuContentC.classList.contains('active')) {
+  if (isVisible) {
     // Volver a enfocar el botón "Grupo" para cerrar el mega-menu-content-c
     grupoButton.focus();
   }
 });
+
 </script>
 </body>
 </html>
