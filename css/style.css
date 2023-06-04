@@ -735,6 +735,10 @@ footer {
   color: red;
 }
 
+.marquee{
+  width: 1225px;
+}
+
 /* Estilos para el menú en versión móvil */
 @media screen and (max-width: 768px) {
   .menu {
@@ -770,7 +774,7 @@ footer {
     width: 571px;
   }
 
-  marquee{
+  .marquee{
     width: 0px;
   }
 }
