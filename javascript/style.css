@@ -11,7 +11,7 @@
 
 .contenedor{
     text-align: center;
-    top: 250px;
+    top: 150px;
     width: 100%;
     position: relative;
 }
@@ -19,11 +19,17 @@
 .social-icons{
     text-align: center;
     position: relative;
-    top: 300px;
+    top: 200px;
+}
+
+.social-icons a {
+    color: #fff;
+    margin-left: 10px;
+    text-decoration: none;
 }
 
 footer{
-    top: 486px;
+    top: 582px;
     position: fixed;
     font-size: 8px;
     text-align: center;
