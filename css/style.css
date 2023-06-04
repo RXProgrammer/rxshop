@@ -740,7 +740,7 @@ footer {
 }
 
 /* Estilos para el menú en versión móvil */
-@media screen and (min-width: 374px) and (max-width: 768px) {
+@media screen and (max-width: 400px) {
   body {
     overflow-x: hidden;
   }
@@ -764,6 +764,11 @@ footer {
     background: #de0000;
     width: 400px;
     padding-right: 15px;
+    transition: left 0.5s ease-in-out;
+  }
+  
+  .menu.active.show {
+    left: 0;
   }
 
   .menu.active li{
