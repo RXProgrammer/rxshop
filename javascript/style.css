@@ -45,4 +45,5 @@ footer{
     padding: 20px;
     color: #e6d200;
     border-top: solid #e6d200;
+    width: -webkit-fill-available;
 }

@@ -787,4 +787,13 @@ footer {
     display: flex;
     flex-direction: column;
   }
+
+  .contenido-all{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sidebar{
+    width: auto;
+  }
 }

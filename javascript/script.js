@@ -11,4 +11,6 @@ var isYou = /Mozilla\/5.0 \(Linux; Android 10; K\) AppleWebKit\/537.36 \(KHTML, 
 // Redirigir a la página adecuada si se cumple alguna de las condiciones
 if ((isMobile || isSmallTablet) && !isYou) {
   window.location.href = "https://rxprogrammer.github.io/rxshop/javascript/mantenimiento.html";
+} else if (!isMobile && !isSmallTablet) {
+  window.location.href = "https://rxprogrammer.github.io/rxshop/index.html"; // URL de tu web principal
 }
