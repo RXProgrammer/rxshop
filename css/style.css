@@ -777,20 +777,27 @@ footer {
 
   .mega-menu-content-c{
     display: flex !important;
+    flex-direction: column;
     width: auto;
   }
 
-  .mega-menu-content-c h1, p{
-
+  .mega-menu-content-c h1{
+    text-align: left;
+    width: 450px;
+    font-size: 21.7px;
   }
 
   .column-c .p{
-
+    line-height: 1;
   }
 
   .caja{
     display: flex;
     flex-direction: column;
+  }
+
+  .separacion{
+    display: none;
   }
 
   .mega-menu-content-e{
