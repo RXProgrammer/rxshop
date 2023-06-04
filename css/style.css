@@ -781,8 +781,13 @@ footer {
   }
 
   .mega-menu-content-c{
+    display: none;
     width: 360px;
     left: -10px;
+  }
+
+  .mega-menu-content-c.active{
+    display: flex;
   }
 
   .mega-menu-content-c h1{
