@@ -81,7 +81,7 @@ Si deseas contáctarte con nosotros clickame y escoje una de las formas en que q
       <ul class="menu">
         <li class="li"><a href="#">Inicio</a></li>
         <li class="mega-menu-c li">
-          <a href="#">Grupos <ion-icon name="chevron-down-outline" class="icon"></ion-icon></a>
+          <a href="#" id="grupo-button">Grupos <ion-icon name="chevron-down-outline" class="icon"></ion-icon></a>
           <div class="mega-menu-content-c">
             <div class="flecha-c">
               <ion-icon name="caret-up"></ion-icon>
@@ -465,6 +465,28 @@ menuItem.addEventListener('mouseleave', function() {
   // JavaScript para activar el menú desplegable al hacer clic en el botón del menú hamburguesa
 document.querySelector('.hamburger-menu').addEventListener('click', function() {
   document.querySelector('.menu').classList.toggle('active');
+});
+
+</script>
+
+<script>
+  // Obtener referencias a los elementos relevantes
+const grupoButton = document.getElementById('grupo-button');
+const megaMenuContentC = document.querySelector('.mega-menu-content-c');
+
+// Agregar evento de clic al botón
+grupoButton.addEventListener('click', function() {
+  // Alternar la clase 'active' en el mega-menu-content-c
+  megaMenuContentC.classList.toggle('active');
+});
+
+// Agregar evento de clic al mega-menu-content-c
+megaMenuContentC.addEventListener('click', function(event) {
+  // Verificar si el evento de clic ocurrió dentro del mega-menu-content-c
+  if (event.target === megaMenuContentC) {
+    // Quitar la clase 'active' del mega-menu-content-c
+    megaMenuContentC.classList.remove('active');
+  }
 });
 
 </script>
