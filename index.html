@@ -95,6 +95,7 @@ Si deseas contáctarte con nosotros clickame y escoje una de las formas en que q
         <li class="mega-menu-c li">
           <a href="#">Grupos <ion-icon name="chevron-down-outline" class="icon"></ion-icon></a>
           <div class="mega-menu-content-c">
+            <button class="close-btn" onclick="closeSection()">X</button>
             <div class="flecha-c">
               <ion-icon name="caret-up"></ion-icon>
             </div>
@@ -102,7 +103,6 @@ Si deseas contáctarte con nosotros clickame y escoje una de las formas en que q
             <p>Encuentra el lugar y el pacio agradable para conocer personas, amigos y más!</p>
             <br class="br">
             <div class="caja">
-              <button class="close-btn" onclick="closeSection()">X</button>
               <div class="column-c">
                 <h3><span>Grupo Oficial:</span> Whatsapp</h3>
                 <ul>
@@ -476,7 +476,7 @@ Si deseas contáctarte con nosotros clickame y escoje una de las formas en que q
 
 <script>
   function closeSection() {
-    var caja = document.querySelector('.mega-menu-c li');
+    var caja = document.querySelector('.mega-menu-content-c');
     caja.style.display = 'none';
   }
 </script>
